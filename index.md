@@ -2,4 +2,4 @@
 
 こんばんわ
 
-<a href="https://www.google.co.jp/">これはリンクです</div>
+<a href="https://www.google.co.jp/">これはリンクです</a>
