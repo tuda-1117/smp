@@ -1,16 +1,4 @@
-# テクニカルガイド
+# テクニカルガイド(テスト)
 
-<head>
-  <meta name="”robots”" content="”noindex”" />
-  <style>
-
-  </style>
-</head>
-
-<div id="smp00">
-  <h2>これはテストタイトルです</h2>
-
-  <div>
-    <a href="https://www.google.co.jp/">これはリンクです</a>
-  </div>
-</div>
+これはテストタイトルです
+<a href="https://www.google.co.jp/">これはリンクです</a>
