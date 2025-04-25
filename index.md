@@ -3,9 +3,7 @@
 <head>
   <meta name="”robots”" content="”noindex”" />
   <style>
-    h1 {
-      display: none;
-    }
+
   </style>
 </head>
 
