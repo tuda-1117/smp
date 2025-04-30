@@ -1,207 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>テクニカルガイド</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="./dist/main.css" rel="stylesheet"></link>
-    <style>
-      /* 必要に応じてカスタムスタイルを追加 */
-    </style>
-  </head>
-  <body class="bg-gray-100 font-sans">
-    <header class="bg-white shadow-sm">
-      <div
-        class="container mx-auto px-4 py-3 flex justify-between items-center"
-      >
-        <div class="text-xl font-bold text-gray-800">OBORAオンライン</div>
-        <nav>
-          <ul class="flex space-x-4 text-sm">
-            <li>
-              <a href="#" class="text-gray-600 hover:text-gray-800">ナビ1</a>
-            </li>
-            <li>
-              <a href="#" class="text-gray-600 hover:text-gray-800">ナビ2</a>
-            </li>
-            <li>
-              <a href="#" class="text-gray-600 hover:text-gray-800">ナビ3</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <div class="max-w-[1080px] mx-auto px-4 py-8 flex flex-col">
-      <main class="w-full space-y-8">
-        <section class="bg-white p-6 rounded shadow">
-          <h1 class="text-2xl font-bold text-gray-800 mb-4">
-            テクニカルガイド　-クリアファイルデータ作成時チェックポイント-
-          </h1>
-          <p class="mb-2 text-gray-600">
-            データ作成方法は下記の３種類からお選びいただけます
-          </p>
-
-          <div class="flex items-start space-x-3 flex-col">
-            <div id="tg_box01" class="w-full border-b border-black mb-6">
-              <h3
-                class="mb-2 font-bold text-gray-600 flex items-center text-[19px]"
-              >
-                <span
-                  class="flex-shrink-0 w-3 h-3 bg-black text-white rounded-full flex items-center justify-center font-bold mr-2"
-                ></span>
-                illustratorもしくはPhotoshopでのデータ作成
-              </h3>
-              <p class="text-gray-600 text-sm mb-4">
-                すべての商品に対応している作成方法です。<br />
-                <a
-                  href="https://www.bora-net.com/beginner/list.html"
-                  class="text-blue-600 hover:opacity-70"
-                  >テンプレートダウンロードページからテンプレートをダウンロード</a
-                >いただき、<br />
-                本ページのアプリケーションごとのチェックポイントやテンプレートに同梱されているマニュアルをご参照いただきながらデータの作成をお願いします。
-              </p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>テクニカルガイド</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="./dist/main.css" rel="stylesheet" />
+        <style>
+            /* 必要に応じてカスタムスタイルを追加 */
+        </style>
+    </head>
+    <body class="bg-gray-100 font-sans">
+        <header class="bg-white shadow-sm">
+            <div class="container mx-auto flex items-center justify-between px-4 py-3">
+                <div class="text-xl font-bold text-gray-800">OBORAオンライン</div>
+                <nav>
+                    <ul class="flex space-x-4 text-sm">
+                        <li>
+                            <a href="#" class="text-gray-600 hover:text-gray-800">ナビ1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-600 hover:text-gray-800">ナビ2</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-600 hover:text-gray-800">ナビ3</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div id="tg_box02" class="!ml-0 w-full border-b border-black mb-6">
-              <h3
-                class="orcl01 mb-2 font-bold text-gray-600 flex items-center text-[19px]"
-              >
-                <span
-                  class="flex-shrink-0 w-3 h-3 bg-black text-white rounded-full flex items-center justify-center font-bold mr-2"
-                ></span>
-                Officeソフトでのデータ作成
-              </h3>
-              <p class="text-gray-600 text-sm mb-4">
-                一部の商品では、Officeソフトでも作成いただけます。<br />
-                Officeソフトをご利用の場合は、「<a
-                  href="https://www.bora-net.com/beginner/list.html"
-                  class="text-blue-600 hover:opacity-70"
-                  >Microsoft Officeのご利用について</a
-                >」のページにて詳細をご確認ください。
-              </p>
-            </div>
-            <div id="tg_box03" class="!ml-0 w-full border-b border-black mb-6">
-              <h3
-                class="mb-2 font-bold text-gray-600 flex items-center text-[19px]"
-              >
-                <span
-                  class="flex-shrink-0 w-3 h-3 bg-black text-white rounded-full flex items-center justify-center font-bold mr-2"
-                ></span>
-                WEBでデザインでのデータ作成
-              </h3>
-              <p class="text-gray-600 text-sm mb-4">
-                一部の商品では、当社ホームページ内で簡単にデザイン制作ができる「WEBでデザイン」をご利用いただきデータ作成いただけます。<br />
-                写真などをアップロードするだけで簡単にデータ作成が可能な、無料で使えるデザインテンプレートも多数ご用意しています。<br />
-                WEBでデザインをご利用の場合は、「<a
-                  href="https://www.bora-net.com/beginner/list.html"
-                  class="text-blue-600 hover:opacity-70"
-                  >WEBでデザインについて詳細はこちら</a
-                >」専用ページにて詳細をご確認ください。
-              </p>
-            </div>
-          </div>
-        </section>
+        </header>
 
-        <section class="bg-white p-6 rounded shadow">
-          <h2 class="text-xl font-bold text-gray-700 mb-4">ご注文方法</h2>
-          <div class="space-y-4">
-            <div class="flex items-start space-x-3">
-              <div
-                class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold"
-              >
-                1
-              </div>
-              <div>
-                <h3 class="font-bold text-gray-600">商品をカートに入れる</h3>
-                <p class="text-gray-600 text-sm">
-                  ご希望の商品をカートに追加してください。
-                </p>
-                <div
-                  class="mt-2 bg-gray-100 p-3 rounded flex items-center space-x-3"
+        <div class="mx-auto flex max-w-[1080px] flex-col px-4 py-8">
+            <main class="w-full space-y-8">
+                <section class="rounded bg-white p-6 shadow">
+                    <h1 class="mb-4 text-2xl font-bold text-gray-800">
+                        テクニカルガイド　-クリアファイルデータ作成時チェックポイント-
+                    </h1>
+                    <p class="mb-2 text-gray-600">
+                        データ作成方法は下記の３種類からお選びいただけます
+                    </p>
+
+                    <div class="flex flex-col items-start space-x-3">
+                        <div id="tg_box01" class="mb-6 w-full border-b border-black">
+                            <h3 class="mb-2 flex items-center text-[19px] font-bold text-gray-600">
+                                <span
+                                    class="mr-2 flex h-3 w-3 flex-shrink-0 items-center justify-center rounded-full bg-black font-bold text-white"
+                                ></span>
+                                illustratorもしくはPhotoshopでのデータ作成
+                            </h3>
+                            <p class="mb-4 text-sm text-gray-600">
+                                すべての商品に対応している作成方法です。<br />
+                                <a
+                                    href="https://www.bora-net.com/beginner/list.html"
+                                    class="text-blue-600 hover:opacity-70"
+                                    >テンプレートダウンロードページからテンプレートをダウンロード</a
+                                >いただき、<br />
+                                本ページのアプリケーションごとのチェックポイントやテンプレートに同梱されているマニュアルをご参照いただきながらデータの作成をお願いします。
+                            </p>
+                        </div>
+                        <div id="tg_box02" class="!ml-0 mb-6 w-full border-b border-black">
+                            <h3
+                                class="orcl01 mb-2 flex items-center text-[19px] font-bold text-gray-600"
+                            >
+                                <span
+                                    class="mr-2 flex h-3 w-3 flex-shrink-0 items-center justify-center rounded-full bg-black font-bold text-white"
+                                ></span>
+                                Officeソフトでのデータ作成
+                            </h3>
+                            <p class="mb-4 text-sm text-gray-600">
+                                一部の商品では、Officeソフトでも作成いただけます。<br />
+                                Officeソフトをご利用の場合は、「<a
+                                    href="https://www.bora-net.com/beginner/list.html"
+                                    class="text-blue-600 hover:opacity-70"
+                                    >Microsoft Officeのご利用について</a
+                                >」のページにて詳細をご確認ください。
+                            </p>
+                        </div>
+                        <div id="tg_box03" class="!ml-0 mb-6 w-full border-b border-black">
+                            <h3 class="mb-2 flex items-center text-[19px] font-bold text-gray-600">
+                                <span
+                                    class="mr-2 flex h-3 w-3 flex-shrink-0 items-center justify-center rounded-full bg-black font-bold text-white"
+                                ></span>
+                                WEBでデザインでのデータ作成
+                            </h3>
+                            <p class="mb-4 text-sm text-gray-600">
+                                一部の商品では、当社ホームページ内で簡単にデザイン制作ができる「WEBでデザイン」をご利用いただきデータ作成いただけます。<br />
+                                写真などをアップロードするだけで簡単にデータ作成が可能な、無料で使えるデザインテンプレートも多数ご用意しています。<br />
+                                WEBでデザインをご利用の場合は、「<a
+                                    href="https://www.bora-net.com/beginner/list.html"
+                                    class="text-blue-600 hover:opacity-70"
+                                    >WEBでデザインについて詳細はこちら</a
+                                >」専用ページにて詳細をご確認ください。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="rounded bg-white p-6 shadow">
+                    <h2 class="mb-4 text-xl font-bold text-gray-700">ご注文方法</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div
+                                class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-500 font-bold text-white"
+                            >
+                                1
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-600">商品をカートに入れる</h3>
+                                <p class="text-sm text-gray-600">
+                                    ご希望の商品をカートに追加してください。
+                                </p>
+                                <div
+                                    class="mt-2 flex items-center space-x-3 rounded bg-gray-100 p-3"
+                                >
+                                    <div
+                                        class="flex h-16 w-16 flex-shrink-0 items-center justify-center bg-gray-300 text-xs text-gray-500"
+                                    >
+                                        商品画像
+                                    </div>
+                                    <div>
+                                        <p class="font-bold text-gray-700">商品名サンプル</p>
+                                        <button
+                                            class="mt-1 rounded bg-orange-500 px-4 py-2 text-sm text-white hover:bg-orange-600"
+                                        >
+                                            カートに入れる
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div
+                                class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-blue-500 font-bold text-white"
+                            >
+                                2
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-600">ご購入手続きへ</h3>
+                                <p class="text-sm text-gray-600">
+                                    カートの内容を確認し、購入手続きへ進んでください。
+                                </p>
+                                <button
+                                    class="mt-2 rounded bg-green-500 px-6 py-2 font-bold text-white hover:bg-green-600"
+                                >
+                                    購入手続きへ進む
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="rounded bg-white p-6 shadow">
+                    <h2 class="mb-4 text-xl font-bold text-gray-700">お支払い方法</h2>
+                    <p class="text-gray-600">ご利用いただけるお支払い方法はこちらです。</p>
+                    <div class="mt-4 flex items-center space-x-4">
+                        <div
+                            class="flex h-8 w-12 items-center justify-center bg-gray-300 text-xs text-gray-500"
+                        >
+                            決済ロゴ
+                        </div>
+                        <div
+                            class="flex h-8 w-12 items-center justify-center bg-gray-300 text-xs text-gray-500"
+                        >
+                            決済ロゴ
+                        </div>
+                        <div
+                            class="flex h-8 w-12 items-center justify-center bg-gray-300 text-xs text-gray-500"
+                        >
+                            決済ロゴ
+                        </div>
+                    </div>
+                </section>
+
+                <section class="rounded bg-white p-6 shadow">
+                    <h2 class="mb-4 text-xl font-bold text-gray-700">配送について</h2>
+                    <p class="text-gray-600">配送に関する情報が入ります。</p>
+                </section>
+
+                <section
+                    class="flex h-48 items-center justify-center rounded bg-white p-6 text-gray-500 shadow"
                 >
-                  <div
-                    class="w-16 h-16 bg-gray-300 flex-shrink-0 flex items-center justify-center text-gray-500 text-xs"
-                  >
-                    商品画像
-                  </div>
-                  <div>
-                    <p class="font-bold text-gray-700">商品名サンプル</p>
-                    <button
-                      class="mt-1 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600"
-                    >
-                      カートに入れる
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex items-start space-x-3">
-              <div
-                class="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold"
-              >
-                2
-              </div>
-              <div>
-                <h3 class="font-bold text-gray-600">ご購入手続きへ</h3>
-                <p class="text-gray-600 text-sm">
-                  カートの内容を確認し、購入手続きへ進んでください。
-                </p>
-                <button
-                  class="mt-2 px-6 py-2 bg-green-500 text-white font-bold rounded hover:bg-green-600"
-                >
-                  購入手続きへ進む
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="bg-white p-6 rounded shadow">
-          <h2 class="text-xl font-bold text-gray-700 mb-4">お支払い方法</h2>
-          <p class="text-gray-600">
-            ご利用いただけるお支払い方法はこちらです。
-          </p>
-          <div class="mt-4 flex items-center space-x-4">
-            <div
-              class="w-12 h-8 bg-gray-300 flex items-center justify-center text-gray-500 text-xs"
-            >
-              決済ロゴ
-            </div>
-            <div
-              class="w-12 h-8 bg-gray-300 flex items-center justify-center text-gray-500 text-xs"
-            >
-              決済ロゴ
-            </div>
-            <div
-              class="w-12 h-8 bg-gray-300 flex items-center justify-center text-gray-500 text-xs"
-            >
-              決済ロゴ
-            </div>
-          </div>
-        </section>
-
-        <section class="bg-white p-6 rounded shadow">
-          <h2 class="text-xl font-bold text-gray-700 mb-4">配送について</h2>
-          <p class="text-gray-600">配送に関する情報が入ります。</p>
-        </section>
-
-        <section
-          class="bg-white p-6 rounded shadow h-48 flex items-center justify-center text-gray-500"
-        >
-          その他のコンテンツセクション
-        </section>
-      </main>
-    </div>
-
-    <footer class="bg-gray-800 text-gray-300 py-8 mt-8">
-      <div class="container mx-auto px-4 text-center text-sm">
-        &copy; 2023 サイト名. All rights reserved.
-        <div class="mt-2 space-x-4">
-          <a href="#" class="hover:text-white">プライバシーポリシー</a>
-          <a href="#" class="hover:text-white">利用規約</a>
-          <a href="#" class="hover:text-white">お問い合わせ</a>
+                    その他のコンテンツセクション
+                </section>
+            </main>
         </div>
-      </div>
-    </footer>
-  </body>
+
+        <footer class="mt-8 bg-gray-800 py-8 text-gray-300">
+            <div class="container mx-auto px-4 text-center text-sm">
+                &copy; 2023 サイト名. All rights reserved.
+                <div class="mt-2 space-x-4">
+                    <a href="#" class="hover:text-white">プライバシーポリシー</a>
+                    <a href="#" class="hover:text-white">利用規約</a>
+                    <a href="#" class="hover:text-white">お問い合わせ</a>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
