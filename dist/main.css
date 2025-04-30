@@ -3,7 +3,11 @@
 /*@media screen and (min-width: 980px) {
 };*/
 
-div .orcl01 {
+div div .text-gray-600 {
+  color: yellowgreen;
+}
+
+div div .orcl01 {
   color: red;
 }
 
