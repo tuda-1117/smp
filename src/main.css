@@ -1,12 +1,8 @@
-@charset "UTF-8";
 /*-------pc---------*/
 /*@media screen and (min-width: 980px) {
 };*/
-.orcl01 {
+div .orcl01 {
   color: red;
 }
+
 /*-------(sp/tab)---------*/
-@media screen and (max-width: 641px) {
-}
-@media screen and (max-width: 376px) {
-}
