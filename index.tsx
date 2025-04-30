@@ -1,393 +1,208 @@
 import React from "react";
-// CSSファイルをインポートします
-import "./TechnicalGuide.css";
 
-// seedoincludeで読み込まれていたと思われる要素は、
-// 実際のReactアプリでは対応するコンポーネントをインポートして使用します。
-// 例:
-// import Header from './components/Header';
-// import Footer from './components/Footer';
-// import SideBnr from './components/SideBnr';
-// import Side from './components/Side';
-// import CommonInclude from './components/CommonInclude';
+// Tailwind CSSは通常、プロジェクトのビルドプロセスで設定します。
+// <script src="https://cdn.tailwindcss.com"></script> や <style> ブロックは
+// このコンポーネント内ではなく、アプリケーション全体の設定で行います。
 
 const TechnicalGuidePage: React.FC = () => {
-  // <head>タグ内の要素（タイトル、メタデータなど）は、
-  // react-helmet-async などのライブラリやフレームワーク機能で管理します。
-  // このコンポーネントのreturn内には含めません。
-  // 例:
-  // <Helmet>
-  //   <meta charset="utf-8" />
-  //   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  //   <title>テクニカルガイド | オリジナルクリアファイルの印刷・通販はボラネット</title>
-  //   <meta name="keywords" content="..." />
-  //   <meta name="description" content="..." />
-  // </Helmet>
-
   return (
-    // 元の<body>タグ内の内容をここに配置します。
-    // 一番外側を単一の要素（例: divまたは<>）でラップします。
-    <div id="container">
-      {/* 元: <div seedoinclude="/include/header.html"></div> */}
-      {/* 実際のアプリではここに <Header /> のようなコンポーネントを配置します */}
-      <div>{/* ヘッダーコンテンツのプレースホルダー */}</div>
-
-      {/* contents_START */}
-      <div id="contents">
-        <ol id="path">
-          <li>
-            <a href="https://www.bora-net.com/index.html">
-              オリジナルクリアファイルの印刷・通販はボラネット
-            </a>
-            &gt;
-          </li>
-          <li>テクニカルガイド</li>
-        </ol>
-
-        {/* main_START */}
-        <div id="main">
-          <article id="technical-guide">
-            <h1>
-              テクニカルガイド
-              <span>クリアファイルデータ作成時チェックポイント</span>
-            </h1>
-            {/* インラインスタイルはJavaScriptオブジェクトに変換 */}
-            <h2 style={{ padding: "0 0 15px" }}>
-              ボラネットのデータ作成方法は下記の３種類からお選びいただけます
-            </h2>
-
-            <h3>
-              ● illustratorもしくはPhotoshopでのデータ作成
-              <img
-                src="/guide/img/adobe_logo.png"
-                alt="illustrator"
-                width="70" // width, height属性は元のまま
-                height="auto"
-                className="iml10" // class -> className
-              />
-            </h3>
-            <div className="adtxbox">
-              すべての商品に対応している作成方法です。
-              <br />
-              <a href="https://www.bora-net.com/beginner/list.html">
-                テンプレートダウンロードページ
-              </a>
-              からテンプレートをダウンロードいただき、
-              <br />
-              本ページのアプリケーションごとのチェックポイントやテンプレートに同梱されているマニュアルをご参照いただきながらデータの作成をお願いします。
-            </div>
-
-            <h3>
-              ● Officeソフトでのデータ作成
-              <img
-                src="/guide/img/office_logo.png"
-                alt="office"
-                width="115"
-                height="auto"
-                className="iml10"
-              />
-            </h3>
-            <div className="adtxbox">
-              一部の商品では、Officeソフトでも作成いただけます。
-              <br />
-              Officeソフトをご利用の場合は、「
-              <a href="/office/index.html">Microsoft Officeのご利用について</a>
-              」のページにて詳細をご確認ください。
-            </div>
-
-            <h3>
-              ● WEBでデザインでのデータ作成
-              <img
-                src="/guide/img/web_deza_logo.png"
-                alt="WEBでデザイン"
-                width="60"
-                height="auto"
-                className="iml10"
-              />
-            </h3>
-            {/* class="adtxbox nolin" -> className="adtxbox nolin" */}
-            <div className="adtxbox nolin">
-              一部の商品では、当社ホームページ内で簡単にデザイン制作ができる「WEBでデザイン」をご利用いただきデータ作成いただけます。
-              <br />
-              写真などをアップロードするだけで簡単にデータ作成が可能な、無料で使えるデザインテンプレートも多数ご用意しています。
-              <br />
-              WEBでデザインをご利用の場合は、「
-              {/* class="adwbdz" -> className="adwbdz" */}
-              <div className="adwbdz">
-                {/* onclick属性はReactのonClickハンドラに書き換える必要がありますが、
-                    ここでは構造変換のため削除またはコメントアウトします。
-                    例: <span className="designmode_off" onClick={() => chgStyleDesign('1')}> */}
-                {/* style属性をJavaScriptオブジェクトに変換 */}
-                <span className="designmode_off">
-                  <a
-                    href="/index_w2p.html"
-                    style={{ display: "block", width: "35%", fontSize: "100%" }}
-                  >
-                    WEBでデザインについて詳細はこちら
-                  </a>
-                </span>
-                {/* 同上 */}
-                <span className="designmode_on">
-                  <a
-                    href="/index_w2p.html"
-                    style={{ display: "block", width: "35%", fontSize: "100%" }}
-                  >
-                    WEBでデザインについて詳細はこちら
-                  </a>
-                </span>
-              </div>
-              」専用ページにて詳細をご確認ください。
-            </div>
-
-            <section className="list">
-              <h2>
-                <a href="illustrator/">
-                  <img
-                    src="../image/guide/h2_illustrator.gif"
-                    alt="illustratorのチェクポイント"
-                    width="700"
-                    height="40"
-                  />
+    <div className="bg-gray-100 font-sans">
+      {/* Header */}
+      <header className="bg-white shadow-sm">
+        <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+          <div className="text-xl font-bold text-gray-800">OBORAオンライン</div>
+          <nav>
+            <ul className="flex space-x-4 text-sm">
+              <li>
+                <a href="#" className="text-gray-600 hover:text-gray-800">
+                  ナビ1
                 </a>
-              </h2>
-              <ul>
-                <li>
-                  <a href="illustrator/tonbo.html">トンボについて</a>
-                </li>
-                <li>
-                  <a href="illustrator/nuri.html">塗り足しについて</a>
-                </li>
-                <li>
-                  <a href="illustrator/colormode.html">カラーモードについて</a>
-                </li>
-                <li>
-                  <a href="illustrator/layer.html">レイヤーについて</a>
-                </li>
-                <li>
-                  <a href="illustrator/picture.html">配置画像について</a>
-                </li>
-                <li>
-                  <a href="illustrator/font.html">
-                    文字のアウトライン化について
-                  </a>
-                </li>
-                <li>
-                  <a href="illustrator/line.html">線・塗りの設定について</a>
-                </li>
-                <li>
-                  <a href="illustrator/sumibeta.html">
-                    スミベタ・リッチブラックについて
-                  </a>
-                </li>
-                <li>
-                  <a href="illustrator/print.html">
-                    オーバープリント（スミノセ）について
-                  </a>
-                </li>
-                <li>
-                  <a href="illustrator/kouka.html">
-                    各種効果を使用する際の注意
-                  </a>
-                </li>
-                <li>
-                  <a href="illustrator/save.html">保存について</a>
-                </li>
-              </ul>
-              <p>
-                <a href="pdf/illustrator.pdf" target="_blank">
-                  <img
-                    src="../image/guide/btn_pdf.gif"
-                    alt="PDFダウンロード"
-                    width="151"
-                    height="35"
-                  />
+              </li>
+              <li>
+                <a href="#" className="text-gray-600 hover:text-gray-800">
+                  ナビ2
                 </a>
-                チェックポイントを印刷できるようになっています。
-                <br />
-                右ボタンからPDFをダウンロードしてご利用ください。
-              </p>
-            </section>
-
-            <section className="list">
-              <h2>
-                <a href="photoshop/">
-                  <img
-                    src="../image/guide/h2_photoshop.gif"
-                    alt="Photoshopのチェクポイント"
-                    width="700"
-                    height="40"
-                  />
+              </li>
+              <li>
+                <a href="#" className="text-gray-600 hover:text-gray-800">
+                  ナビ3
                 </a>
-              </h2>
-              <ul>
-                <li>
-                  <a href="photoshop/picture.html">解像度について</a>
-                </li>
-                <li>
-                  <a href="photoshop/colormode.html">カラーモードについて</a>
-                </li>
-                <li>
-                  <a href="photoshop/layer.html">レイヤーについて</a>
-                </li>
-                <li>
-                  <a href="photoshop/save.html">保存について</a>
-                </li>
-              </ul>
-              <p>
-                <a href="pdf/photoshop.pdf" target="_blank">
-                  <img
-                    src="../image/guide/btn_pdf.gif"
-                    alt="PDFダウンロード"
-                    width="151"
-                    height="35"
-                  />
-                </a>
-                チェックポイントを印刷できるようになっています。
-                <br />
-                右ボタンからPDFをダウンロードしてご利用ください。
-              </p>
-            </section>
-
-            <section className="list">
-              <h2>
-                <a href="white/">
-                  <img
-                    src="../image/guide/h2_white.gif"
-                    alt="白版の必要性と作り方"
-                    width="700"
-                    height="40"
-                  />
-                </a>
-              </h2>
-              <ul>
-                <li>
-                  <a href="white/need.html">白版の必要性</a>
-                </li>
-                <li>
-                  <a href="white/pattern.html">白版作成パターン</a>
-                </li>
-                <li>
-                  <a href="white/use_illustrator.html">
-                    イラストレーターによる作成
-                  </a>
-                </li>
-                <li>
-                  <a href="white/use_photoshop.html">
-                    フォトショップによる作成
-                  </a>
-                </li>
-                <li>
-                  <a href="white/point.html">白版作成のその他のポイント</a>
-                </li>
-              </ul>
-              <p>
-                <a href="pdf/hakuban.pdf" target="_blank">
-                  <img
-                    src="../image/guide/btn_pdf.gif"
-                    alt="PDFダウンロード"
-                    width="151"
-                    height="35"
-                  />
-                </a>
-                チェックポイントを印刷できるようになっています。
-                <br />
-                右ボタンからPDFをダウンロードしてご利用ください。
-              </p>
-            </section>
-
-            <section className="list">
-              <h2>
-                <a href="date/">
-                  <img
-                    src="../image/guide/h2_date.gif"
-                    alt="よくある不備データ"
-                    width="700"
-                    height="40"
-                  />
-                </a>
-              </h2>
-              <ul>
-                <li>
-                  <a href="date/comp.html">完全データ入稿が基本です</a>
-                </li>
-                <li>
-                  <a href="date/template.html">テンプレートに作っていない</a>
-                </li>
-                <li>
-                  <a href="date/clearfile.html">
-                    クリアファイルの白版が作っていない
-                  </a>
-                </li>
-                <li>
-                  <a href="date/nuri.html">塗り足しがない</a>
-                </li>
-                <li>
-                  <a href="date/outline.html">
-                    文字のアウトライン化がしていない
-                  </a>
-                </li>
-                <li>
-                  <a href="date/granularity.html">解像度が低い</a>
-                </li>
-                <li>
-                  <a href="date/link.html">配置画像のリンクが切れている</a>
-                </li>
-                <li>
-                  <a href="date/suminose.html">スミノセの失敗</a>
-                </li>
-              </ul>
-              <p>
-                <a href="pdf/fubidata.pdf" target="_blank">
-                  <img
-                    src="../image/guide/btn_pdf.gif"
-                    alt="PDFダウンロード"
-                    width="151"
-                    height="35"
-                  />
-                </a>
-                チェックポイントを印刷できるようになっています。
-                <br />
-                右ボタンからPDFをダウンロードしてご利用ください。
-              </p>
-            </section>
-
-            {/* 元: <div seedoinclude="/include/common.html"></div> */}
-            {/* 実際のアプリではここに <CommonInclude /> のようなコンポーネントを配置します */}
-            <div>{/* 共通インクルードコンテンツのプレースホルダー */}</div>
-          </article>
+              </li>
+            </ul>
+          </nav>
         </div>
-        {/* main_END */}
+      </header>
 
-        {/* aside_START */}
-        <aside>
-          {/* 元: <div seedoinclude="/include/side_bnr.html"></div> */}
-          {/* 実際のアプリではここに <SideBnr /> のようなコンポーネントを配置します */}
-          <div>{/* サイドバナーコンテンツのプレースホルダー */}</div>
+      {/* Main Content Area */}
+      <div className="max-w-[1080px] mx-auto px-4 py-8 flex flex-col">
+        <main className="w-full space-y-8">
+          {/* テクニカルガイド セクション */}
+          <section className="bg-white p-6 rounded shadow">
+            <h1 className="text-2xl font-bold text-gray-800 mb-4">
+              テクニカルガイド　-クリアファイルデータ作成時チェックポイント-
+            </h1>
+            <p className="mb-2 text-gray-600">
+              データ作成方法は下記の３種類からお選びいただけます
+            </p>
 
-          {/* 元: <div seedoinclude="/include/side.html"></div> */}
-          {/* 実際のアプリではここに <Side /> のようなコンポーネントを配置します */}
-          <div>{/* サイドコンテンツのプレースホルダー */}</div>
-        </aside>
-        {/* aside_END */}
+            <div className="flex items-start space-x-3 flex-col">
+              {/* データ作成方法 1 */}
+              <div
+                id="tg_box01"
+                className="w-full border-b-2 border-black mb-4"
+              >
+                <h3 className="mb-2 font-semibold text-gray-600 flex items-center text-[19px]">
+                  <span className="flex-shrink-0 w-3 h-3 bg-black text-white rounded-full flex items-center justify-center font-bold mr-2">
+                    {/* 数字やアイコンが入る場合 */}
+                  </span>
+                  illustratorもしくはPhotoshopでのデータ作成
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  すべての商品に対応している作成方法です。
+                  <br />
+                  <a
+                    href="https://www.bora-net.com/beginner/list.html"
+                    className="text-blue-600 hover:opacity-70"
+                  >
+                    テンプレートダウンロードページからテンプレートをダウンロード
+                  </a>
+                  いただき、
+                  <br />
+                  本ページのアプリケーションごとのチェックポイントやテンプレートに同梱されているマニュアルをご参照いただきながらデータの作成をお願いします。
+                </p>
+              </div>
+
+              {/* データ作成方法 2 */}
+              <div id="tg_box02" className="!ml-0 w-full">
+                <h3 className="mb-2 font-semibold text-gray-600 flex items-center text-[19px]">
+                  <span className="flex-shrink-0 w-3 h-3 bg-black text-white rounded-full flex items-center justify-center font-bold mr-2">
+                    {/* 数字やアイコンが入る場合 */}
+                  </span>
+                  Officeソフトでのデータ作成
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  一部の商品では、Officeソフトでも作成いただけます。
+                  <br />
+                  Officeソフトをご利用の場合は、「
+                  <a
+                    href="https://www.bora-net.com/beginner/list.html"
+                    className="text-blue-600 hover:opacity-70"
+                  >
+                    Microsoft Officeのご利用について
+                  </a>
+                  」のページにて詳細をご確認ください。
+                </p>
+              </div>
+              {/* 元HTMLにはデータ作成方法3がありませんでしたが、見出しのテキストに「3種類」とあるため、必要であればここに追加します */}
+            </div>
+          </section>
+
+          {/* ご注文方法 セクション */}
+          <section className="bg-white p-6 rounded shadow">
+            <h2 className="text-xl font-semibold text-gray-700 mb-4">
+              ご注文方法
+            </h2>
+            <div className="space-y-4">
+              {/* ステップ 1 */}
+              <div className="flex items-start space-x-3">
+                <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
+                  1
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-600">
+                    商品をカートに入れる
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    ご希望の商品をカートに追加してください。
+                  </p>
+                  <div className="mt-2 bg-gray-100 p-3 rounded flex items-center space-x-3">
+                    <div className="w-16 h-16 bg-gray-300 flex-shrink-0 flex items-center justify-center text-gray-500 text-xs">
+                      商品画像
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-700">
+                        商品名サンプル
+                      </p>
+                      <button className="mt-1 px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600">
+                        カートに入れる
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* ステップ 2 */}
+              <div className="flex items-start space-x-3">
+                <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">
+                  2
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-600">
+                    ご購入手続きへ
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    カートの内容を確認し、購入手続きへ進んでください。
+                  </p>
+                  <button className="mt-2 px-6 py-2 bg-green-500 text-white font-semibold rounded hover:bg-green-600">
+                    購入手続きへ進む
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* お支払い方法 セクション */}
+          <section className="bg-white p-6 rounded shadow">
+            <h2 className="text-xl font-semibold text-gray-700 mb-4">
+              お支払い方法
+            </h2>
+            <p className="text-gray-600">
+              ご利用いただけるお支払い方法はこちらです。
+            </p>
+            <div className="mt-4 flex items-center space-x-4">
+              <div className="w-12 h-8 bg-gray-300 flex items-center justify-center text-gray-500 text-xs">
+                決済ロゴ
+              </div>
+              <div className="w-12 h-8 bg-gray-300 flex items-center justify-center text-gray-500 text-xs">
+                決済ロゴ
+              </div>
+              <div className="w-12 h-8 bg-gray-300 flex items-center justify-center text-gray-500 text-xs">
+                決済ロゴ
+              </div>
+            </div>
+          </section>
+
+          {/* 配送について セクション */}
+          <section className="bg-white p-6 rounded shadow">
+            <h2 className="text-xl font-semibold text-gray-700 mb-4">
+              配送について
+            </h2>
+            <p className="text-gray-600">配送に関する情報が入ります。</p>
+          </section>
+
+          {/* その他のコンテンツ セクション */}
+          <section className="bg-white p-6 rounded shadow h-48 flex items-center justify-center text-gray-500">
+            その他のコンテンツセクション
+          </section>
+        </main>
       </div>
-      {/* contents_END */}
 
-      {/* contents2 - 元のHTMLでpathが重複していましたが、そのまま配置します */}
-      <div id="contents2">
-        <ol id="path">
-          <li>
-            <a href="https://www.bora-net.com/index.html">
-              オリジナルクリアファイルの印刷・通販はボラネット
+      {/* Footer */}
+      <footer className="bg-gray-800 text-gray-300 py-8 mt-8">
+        <div className="container mx-auto px-4 text-center text-sm">
+          &copy; 2023 サイト名. All rights reserved.
+          <div className="mt-2 space-x-4">
+            <a href="#" className="hover:text-white">
+              プライバシーポリシー
             </a>
-            &gt;
-          </li>
-          <li>テクニカルガイド</li>
-        </ol>
-      </div>
-
-      {/* 元: <div seedoinclude="/include/footer.html"></div> */}
-      {/* 実際のアプリではここに <Footer /> のようなコンポーネントを配置します */}
-      <div>{/* フッターコンテンツのプレースホルダー */}</div>
+            <a href="#" className="hover:text-white">
+              利用規約
+            </a>
+            <a href="#" className="hover:text-white">
+              お問い合わせ
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
